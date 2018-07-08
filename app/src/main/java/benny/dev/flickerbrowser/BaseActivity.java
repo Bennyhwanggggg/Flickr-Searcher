@@ -13,7 +13,7 @@ public class BaseActivity extends AppCompatActivity{
     void activiateToolbar (boolean enableHome){
         Log.d(TAG, "activiateToolbar: starts");
         ActionBar actionBar = getSupportActionBar();
-        if(actionBar != null){
+        if(actionBar == null){
             Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
             if(toolbar != null){
                 setSupportActionBar(toolbar); // put the toolbar in place
