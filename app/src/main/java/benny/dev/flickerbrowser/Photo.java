@@ -1,6 +1,11 @@
 package benny.dev.flickerbrowser;
 
-class Photo {
+import java.io.Serializable;
+
+class Photo implements Serializable{
+
+    private static final long serialVersionUID = 1L; // version number for serialisation to ensure it runs properly when different java run vm.
+
     private String mTitle;
     private String mAuthor;
     private String mAuthorId;
